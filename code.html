@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Portfolio Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FFFFFF",
+                        "background-light": "#F3F4F6",
+                        "background-dark": "#1F1A30",
+                    },
+                    fontFamily: {
+                        display: ["Poppins", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        .gradient-bg {
+            background-image: linear-gradient(to right, #f472b6, #a78bfa, #3b82f6);
+        }
+
+        .gradient-bg-dark-purple {
+            background-image: linear-gradient(135deg, #4A2F5B, #2C2143);
+        }
+
+        .gradient-bg-pink-purple {
+            background-image: linear-gradient(135deg, #f4a261, #e76f51);
+        }
+    </style>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200">
+    <header class="bg-gray-100/80 dark:bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a class="text-xl font-bold text-gray-800 dark:text-white" href="#">ASSE KOFFI EMMANUEL</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <nav class="flex space-x-8">
+                    <!-- <a class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-300" href="#home">Accueil</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-300" href="#about">A pr</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-300" href="#skills">Skills</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-300" href="#gallery">Portfolio</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-300" href="#contact">Contact</a> -->
+                </nav>
+                <a class="bg-indigo-500 hover:bg-indigo-600 text-white font-medium py-2 px-4 rounded-md transition-colors duration-300 shadow-sm"
+                    href="docs/CV_ASSE_KOFFI_EMMANUEL.pdf" download>Télécharger mon CV</a>
+            </div>
+            <button class="md:hidden text-gray-800 dark:text-white">
+                <span class="material-icons">menu</span>
+            </button>
+        </div>
+    </header>
+    <main class="w-full">
+        <section class="min-h-screen flex items-center bg-gray-100 dark:bg-gray-900 overflow-hidden" id="home">
+            <div class="container mx-auto px-6 py-12 pt-24 md:pt-12">
+                <div class="flex flex-col lg:flex-row items-center justify-center lg:space-x-12">
+                    <div class="w-full lg:w-1/2 flex justify-center mb-10 lg:mb-0">
+                        <img alt="Portrait of Paul Benjamin Ahoutou" class="rounded-lg shadow-2xl w-full max-w-sm"
+                            src="img/photo_profile.jpeg" />
+                    </div>
+                    <div class="w-full lg:w-1/2 lg:p-12 p-8 rounded-lg shadow-xl gradient-bg-dark-purple text-white"
+                        id="about">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-2">Bonjour !</h1>
+                        <h2 class="text-4xl md:text-5xl font-bold mb-6">Je suis Asse Koffi <br />EMMANUEL</h2>
+                        <p class="text-gray-300 mb-8 leading-relaxed">
+                            Titulaire d'une Licence en Géographie Physique à l'Université Félix Houphouet
+                            Boigny, je me suis spécialisé en science d'Analyse Spatiale à l'Institut
+                            Universitaire d'Abidjan afin d'obtenir un diplôme d'Ingénieur Géomaticien.
+
+                        </p>
+                        <a class="inline-flex items-center justify-center w-12 h-12 bg-white text-gray-900 rounded-full hover:bg-gray-200 transition-colors duration-300"
+                            href="#contact">
+                            <span class="material-icons">contact_mail</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 gradient-bg-dark-purple text-white" id="skills">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h3 class="text-3xl font-bold mb-4">Compétence</h3>
+                        <p class="text-gray-300 mb-12">
+                            En lien avec mes études et mes expériences professionnelles, je me suis spécialisé en
+                            Systèmes d’Information Géographique et en analyse géospatiale. Je suis compétent dans les
+                            domaines de la télédétection et de l’analyse d’images satellitaires, de la gestion et de
+                            l’analyse de bases de données géospatiales, de la modélisation spatiale, ainsi que dans
+                            l’utilisation de drones pour la collecte de données géographiques et le webmapping. Je
+                            maîtrise les logiciels suivants : QGIS, ArcGIS, ArcGIS Pro, Google Earth Pro, Surfer, Global
+                            Mapper, PhotoMod, AutoCAD, ENVI, SNAP, ainsi que les outils bureautiques Word, Excel,
+                            PowerPoint, et je possède des compétences en code HTML. </p>
+                        <div class="grid grid-cols-3 gap-8 text-center">
+                            <div class="flex flex-col items-center space-y-2">
+                                <div
+                                    class="w-16 h-16 rounded-full border border-gray-400 flex items-center justify-center">
+                                    <span class="material-icons text-3xl">menu_book</span>
+                                </div>
+                                <span class="text-sm">QGIS</span>
+                            </div>
+                            <div class="flex flex-col items-center space-y-2">
+                                <div
+                                    class="w-16 h-16 rounded-full border border-gray-400 flex items-center justify-center">
+                                    <span class="material-icons text-3xl">storage</span>
+                                </div>
+                                <span class="text-sm">ArcGIS</span>
+                            </div>
+                            <div class="flex flex-col items-center space-y-2">
+                                <div
+                                    class="w-16 h-16 rounded-full border border-gray-400 flex items-center justify-center">
+                                    <span class="material-icons text-3xl">settings</span>
+                                </div>
+                                <span class="text-sm">AutoCAD</span>
+                            </div>
+                            <div class="flex flex-col items-center space-y-2">
+                                <div
+                                    class="w-16 h-16 rounded-full border border-gray-400 flex items-center justify-center">
+                                    <span class="material-icons text-3xl">send</span>
+                                </div>
+                                <span class="text-sm">ENVI</span>
+                            </div>
+                            <div class="flex flex-col items-center space-y-2">
+                                <div
+                                    class="w-16 h-16 rounded-full border border-gray-400 flex items-center justify-center">
+                                    <span class="material-icons text-3xl">bar_chart</span>
+                                </div>
+                                <span class="text-sm">Global Mapper</span>
+                            </div>
+                            <div class="flex flex-col items-center space-y-2">
+                                <div
+                                    class="w-16 h-16 rounded-full border border-gray-400 flex items-center justify-center">
+                                    <span class="material-icons text-3xl">code</span>
+                                </div>
+                                <span class="text-sm">HTML</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mb-12">
+                            <h3 class="text-3xl font-bold mb-4">Formation</h3>
+                            <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                <li>Master en Geomatique et
+                                    Ingénierie de l’environnement
+                                    et de l’aménagement
+                                </li>
+                                <li>Licence en Géographie</li>
+                                <li>Baccalauréat Scientifique</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold mb-4">Certificats</h3>
+                            <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                <li>Doctorat en Géographie / Géomatique et SIG</li>
+                                <li>Analyste SIG</li>
+                                <li>Cartographie/SIG</li>
+                                <li>Certificats de participation a la formation géoconferencement</li>
+                                <li>Outils et Applications de la Géomatique</li>
+                                <li>Conception et Gestion de Bases de Données</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 bg-background-light dark:bg-background-dark" id="gallery">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-800 dark:text-white">Galerie Photo</h2>
+                    <p class="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">
+                        Une galerie de photos mettant en valeur mes expériences sur le terrain, mes certifications et
+                        les résultats de mes travaux cartographiques. Chaque image raconte une partie de mon parcours
+                        professionnel.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img alt="Certificate and person working on a laptop"
+                            class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+                            src="img/certificat.jpeg" />
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img alt="Professional in a safety vest and hard hat working outdoors"
+                            class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+                            src="img/photo1.jpeg" />
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img alt="Geographical map showing land data"
+                            class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+                            src="img/carte3.jpeg" />
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img alt="Geographical map showing land data"
+                            class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+                            src="img/carte1.jpeg" />
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img alt="Geographical map showing land data"
+                            class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+                            src="img/carte2.jpeg" />
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img alt="Geographical map showing land data"
+                            class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+                            src="img/carte4.jpeg" />
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="img/attestation 2.jpeg" alt="Attestation" class="max-w-full h-auto  transform hover:scale-105 transition-transform duration-300" />
+                    </div>
+
+                    <div class="overflow-hidden rounded-lg shadow-lg sm:col-span-2">
+                        <img alt="Professional in a hard hat looking down at a device"
+                            class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+                            src="img/photo2.jpeg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 gradient-bg-dark-purple text-white" id="contact">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-4xl font-bold mb-4">Contact</h2>
+                        <p class="text-gray-300 mb-8 max-w-md">
+                            N'hésitez pas à me contacter pour toute collaboration, projet ou partage d'expérience. Je
+                            suis toujours ouvert à de nouvelles opportunités.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                                    <span class="material-icons text-xl">public</span>
+                                </div>
+                                <span>www.linkedin.com/in/emmanuel-asse-094898210</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                                    <span class="material-icons text-xl">email</span>
+                                </div>
+                                <span>emmanuelasse067@gmail.com</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                                    <span class="material-icons text-xl">phone</span>
+                                </div>
+                                <span>+225 0779174803</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2" for="name">Nom</label>
+                                <input
+                                    class="w-full bg-white/5 border border-white/20 rounded-md py-2 px-4 text-white placeholder-gray-400 focus:ring-primary focus:border-primary"
+                                    id="name" name="name" type="text" />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2" for="email">Email</label>
+                                <input
+                                    class="w-full bg-white/5 border border-white/20 rounded-md py-2 px-4 text-white placeholder-gray-400 focus:ring-primary focus:border-primary"
+                                    id="email" name="email" type="email" />
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2" for="message">Message</label>
+                            <textarea
+                                class="w-full bg-white/5 border border-white/20 rounded-md py-2 px-4 text-white placeholder-gray-400 focus:ring-primary focus:border-primary"
+                                id="message" name="message" rows="5"></textarea>
+                        </div>
+                        <div>
+                            <button
+                                class="bg-primary text-gray-900 font-bold py-3 px-8 rounded-md hover:bg-gray-200 transition-colors duration-300"
+                                type="submit">
+                                Envoyer Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-gray-400">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col sm:flex-row justify-between items-center">
+                <p class="text-sm">© 2025 Supertest. All rights reserved Lael.</p>
+                <div class="flex space-x-4 mt-4 sm:mt-0">
+                    <a class="hover:text-white transition-colors duration-300" href="https://www.linkedin.com/in/emmanuel-asse-094898210/">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+                            </path>
+                        </svg>
+                    </a>
+                    <!-- <a class="hover:text-white transition-colors duration-300" href="#">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616v.064c0 2.298 1.634 4.212 3.799 4.65-1.04.282-2.133.367-3.26.125.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.588-7.52 2.588-1.01 0-1.956-.059-2.875-.173 2.617 1.68 5.731 2.656 9.088 2.656 9.854 0 15.253-8.15 15.253-15.254 0-.233-.005-.465-.014-.697.94-.678 1.757-1.53 2.408-2.5z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="hover:text-white transition-colors duration-300" href="#">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.644-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z">
+                            </path>
+                        </svg>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
